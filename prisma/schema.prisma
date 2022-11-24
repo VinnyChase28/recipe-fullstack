@@ -2,9 +2,10 @@ generator client {
   provider = "prisma-client-js"
 }
 
+//use thhe local postgres database for development
 datasource db {
-  provider = "postgres"
-  url      = "file:./dev.db"
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
 }
 
 model User {
