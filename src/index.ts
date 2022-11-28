@@ -4,7 +4,6 @@ import express from "express";
 const prisma = new PrismaClient();
 const app = express();
 
-
 app.use(express.json());
 
 // app.post(`/signup`, async (req, res) => {
@@ -160,6 +159,11 @@ app.get("/recipes", async (req, res) => {
 
 //   res.json(posts);
 // });
+
+//create hello world in root route
+app.get("/", (req, res) => {
+  res.send("Welcome to the recipe API");
+});
 
 const server = app.listen(3000, "0.0.0.0", () =>
   console.log(`
