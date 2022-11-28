@@ -167,7 +167,7 @@ app.get("/", (req, res) => {
 
 const port: any = process.env.PORT || 80;
 
-const server = app.listen(port, () =>
+const server = app.listen(port, "0.0.0.0", () =>
   console.log(`
 🚀 Server ready!
 ⭐️ See sample requests: http://pris.ly/e/ts/rest-express#3-using-the-rest-api`)
