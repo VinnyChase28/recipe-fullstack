@@ -165,10 +165,10 @@ app.get("/", (req, res) => {
   res.send("Welcome to the recipe API");
 });
 
-const port: any = process.env.PORT || 3000;
+const port: any = process.env.PORT || 80;
 
-const server = app.listen(port, "0.0.0.0", () =>
+const server = app.listen(port, () =>
   console.log(`
-🚀 Server ready at: http://localhost:3000
+🚀 Server ready!
 ⭐️ See sample requests: http://pris.ly/e/ts/rest-express#3-using-the-rest-api`)
 );
