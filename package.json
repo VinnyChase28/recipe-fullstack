@@ -6,7 +6,7 @@
     "node": "16.18.1"
   },
   "scripts": {
-    "start": "ts-node dist/index.ts",
+    "start": "node dist/index.ts",
     "postinstall": "tsc",
     "watch-node": "nodemon dist/index.js",
     "watch-ts": "tsc -w"
