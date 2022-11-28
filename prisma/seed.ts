@@ -48,6 +48,8 @@ const userData: Prisma.UserCreateInput[] = [
   },
 ]
 
+
+
 async function main() {
   console.log(`Start seeding ...`)
   for (const u of userData) {
